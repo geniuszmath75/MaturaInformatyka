@@ -1,0 +1,90 @@
+1. SMTP(Simple Mail Transfer Protocol) - względnie prosty, tekstowy protokół, w którym określa się co najmniej jednego odbiorcę wiadomości (w większości przypadków weryfikowane jest jego istnienie), a następnie przekazuje treść wiadomości. Demon SMTP działa najczęściej na porcie 25. Można przetestować serwer SMTP przy użyciu programu telnet.
+
+2.POP3(Post Office Protocol) - protokół internetowy z warstwy aplikacji pozwalający na odbiór poczty elektronicznej ze zdalnego serwera do lokalnego komputera poprzez połączenie TCP/IP.
+Ograniczenia:
+-połączenie jest realizowane tylko wtedy, gdy użytkownik pobiera pocztę; nie może zostać uśpione;
+-każdy list musi być pobierany razem z załącznikami i żadnej jego części nie można w łatwy sposób pominąć;
+-wszystkie odbierane listy trafiają do jednej skrzynki i nie da się utworzyć ich kilku;
+-serwer POP3 nie potrafi sam przeszukiwać czekających w kolejce listów.
+
+3. IMAP(Internet Message Access Protocol) - nastepca POP3. W przeciwieństwie do niego IMAP pozwala na zarządzanie wieloma folderami pocztowymi oraz pobieranie i operowanie na listach znajdujących się na zdalnym serwerze.
+Zalety IMAP:
+-dwa tryby działania: połączeniowy i bezpołączeniowy;
+-pozwala równocześnie podłączać się wielu klientom;
+-wiadomości mogą być przesyłane do klientów bezpośrednio po dostarczeniu na serwer;
+-implementuje system flag określających status wiadomości;
+-znaczniki(tagi)
+-możliwość posiadania wielu folderów
+
+4.NTFS(New Technology File System) - standardowy system plików systemu Windows NT i jego następców. Został wprowadzony w celu zastąpienia starszego FAT-u, używanego w MS-DOS.
+Max. rozmiar pliku = 16TB
+Cechy:
+-księgowanie;
+-szyfrowanie plików i katalogów
+-kompresja danych „w locie”;
+-prawa dostępu dla grup i użytkowników
+-transakcyjność
+-fragmentacja plików
+
+5.FAT32(File Allocation Table) - odmiana systemu plików FAT, po raz pierwszy zastosowany w systemie operacyjnym Windows 95 OSR2, jego poprzednikiem jest FAT16.
+Max. rozmiar pliku = 4GB
+
+6. BIOS(Basic Input/Output System) - zapisany w pamięci stałej zestaw podstawowych procedur pośredniczących pomiędzy systemem operacyjnym a sprzętem. Jest wyposażony w pamięć konfiguracji, w której znajdują się informacje dotyczące daty, czasu oraz danych na temat wszystkich urządzeń zainstalowanych w komputerze. Jest to program zapisany w pamięci ROM płyty głównej oraz innych kart rozszerzeń takich, jak np. karta graficzna.
+
+7. RAM(random-access memory) - pamięć o dostępie swobodnym. W pamięci RAM przechowywane są aktualnie wykonywane programy i dane dla tych programów oraz wyniki ich pracy. Wyniki pracy programów wymagające trwałego przechowania muszą być zapisane na innym nośniku danych.
+Podział RAM: 
+-pamięć statyczna(SRAM) - szybsze, ale droższe
+-pamięć dynamiczna(DRAM) - wolniejsze, wymagają częstego odświeżania, ale tańsze
+
+8. ROM(read-only memory) - pamięć tylko do odczytu. Pamięć, której dane można tylko odczytywać, natomiast zapis jest niemożliwy albo wymaga dodatkowych czynności lub sprzętu.
+
+9. Radiator - element lub zespół elementów odprowadzających ciepło z układu, z którym się styka, do otoczenia. Radiatory wykonuje się najczęściej z aluminium lub miedzi.
+
+10.CPU(central processing unit, procesor) - sekwencyjne urządzenie cyfrowe, które pobiera dane z pamięci operacyjnej, interpretuje je i wykonuje jako rozkazy.
+Budowa:
+-zespół rejestrów do przechowywania danych i wyników. Rejestry mogą być ogólnego przeznaczenia lub mają specjalne przeznaczenie.
+-jednostkę arytmetyczną (arytmometr) do wykonywania operacji obliczeniowych na danych
+-układ sterujący przebiegiem wykonywania programu
+-inne układy, w które producent wyposaża procesor w celu usprawnienia jego pracy.
+
+11. Mostek północny - element niektórych współczesnych oraz starszych chipsetów, realizujący połączenia pomiędzy procesorem, pamięcią operacyjną, magistralą AGP lub PCI Express i mostkiem południowym.
+
+12. Mostek pułudniowy - element współczesnych chipsetów, realizujący połączenie procesora do wolniejszej części wyposażenia mikrokomputera
+
+13. DNS(Domain Name System) - hierarchiczny rozproszony system nazw sieciowych, który odpowiada na zapytania o nazwy domen. Dzięki DNS nazwa mnemoniczna, np. pl.wikipedia.org jest tłumaczona na odpowiadający jej adres IP, czyli 91.198.174.192.
+Domena jest poddrzewem hierarchii nazw, obejmującym zbiór domen (subdomen) o wspólnym sufiksie, nazwanym tak jak węzeł na szczycie (np. domena funkcjonalna com.pl grupująca nazwy zakończone .com.pl).
+Cechy:
+-Nie ma jednej centralnej bazy danych adresów IP i nazw. Najważniejszych jest 13 głównych serwerów (klastrów) rozmieszczonych na wielu kontynentach.
+
+-Serwery DNS przechowują dane tylko wybranych domen.
+
+-Każda domena powinna mieć co najmniej 2 serwery DNS obsługujące ją, jeśli więc nawet któryś z nich będzie nieczynny, to drugi może przejąć jego zadanie.
+
+-Każda domena posiada jeden główny dla niej serwer DNS (tzw. master), na którym to wprowadza się konfigurację tej domeny, wszystkie inne serwery obsługujące tę domenę pobierają dane dotyczące tej domeny automatycznie z jej serwera głównego po każdej zmianie zawartości domeny.
+
+-Serwery DNS mogą przechowywać przez pewien czas odpowiedzi z innych serwerów (ang. caching), a więc proces zamiany nazw na adresy IP jest często krótszy niż w podanym przykładzie.
+
+-Na dany adres IP może wskazywać wiele różnych nazw. Na przykład na adres IP 207.142.131.245 mogą wskazywać nazwy pl.wikipedia.org oraz de.wikipedia.org
+
+-Czasami pod jedną nazwą może kryć się więcej niż 1 adres IP po to, aby jeśli jeden z nich zawiedzie, inny mógł spełnić jego rolę.
+
+-Przy zmianie adresu IP komputera pełniącego funkcję serwera WWW, nie ma konieczności zmiany adresu internetowego strony, a jedynie poprawy wpisu w serwerze DNS obsługującym domenę.
+
+-Protokół DNS posługuje się do komunikacji serwer-klient głównie protokołem UDP, serwer pracuje na porcie numer 53, przesyłanie domeny pomiędzy serwerami master i slave odbywa się protokołem TCP na porcie 53.
+
+Rodzaje zapytań DNS:
+-rekurencyjne, które zmusza serwer do znalezienia wymaganej informacji lub zwrócenia wiadomości o błędzie.
+-iteracyjne, które wymaga od serwera jedynie podania najlepszej dostępnej mu w danej chwili odpowiedzi, przy czym nie musi on łączyć się jeszcze z innymi serwerami.
+
+Odpowiedzi na zapytania:
+-autoratywne - dotyczące domeny w strefie, nad którą dany serwer ma zarząd, pochodzą one bezpośrednio z bazy danych serwera;
+-nieautoratywne - dane które zwraca serwer pochodzą spoza zarządzanej przez niego strefy;
+
+Format komunikatu DNS:
+NAGŁÓWEK – (Header)
+ZAPYTANIE – (Question) do serwera nazw
+ODPOWIEDŹ – (Answer) zawiera rekordy będące odpowiedzią
+ZWIERZCHNOŚĆ – (Authority) wskazuje serwery zwierzchnie dla domeny
+DODATKOWA – (Additional) sekcja informacji dodatkowych
+
+14. 

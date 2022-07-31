@@ -1,0 +1,22 @@
+5.1
+Gniezno: 152
+Malbork: 183
+Ogrodzieniec: 222
+Przemyśl: 198
+5.2
+liczba dni: 8
+pierwszy dzień: 07.10.2021
+ostatni dzień: 14.10.2021
+5.3
+Gniezno: 819000
+Malbork: 944240
+Ogrodzieniec: 1115560
+Przemyśl: 1062920
+Suma końcowa: 3941720
+5.4
+data zamówienia: 19.03.2021
+nr zamówienia: 154
+ilość zamówień: 37
+ilość butelek łącznie: 285230
+5.5
+ilość butelek: 13179
