@@ -4,8 +4,6 @@ def wypisz(tab):
 
 def sort_by_insert(tab):
     n = len(tab)
-    pom = 0
-    t = 0
     for i in range(1, n):
         pom = tab[i]
         j = i - 1
